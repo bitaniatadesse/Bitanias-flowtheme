@@ -82,6 +82,10 @@ if ( ! function_exists( 'flow_theme_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'flow_theme_setup' );
+function flow_theme_add_editor_style() {
+	add_editor_style('dist/css/editor-style.css');
+}
+add_action('admin_init','flow_theme_add_editor_style');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
