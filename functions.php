@@ -111,10 +111,8 @@ function flow_theme_scripts() {
 	wp_enqueue_style('flow-theme-fontawesome',get_template_directory_uri() . '/fonts/font awsome/css/fontawesome.min.css' );
 	wp_enqueue_style( 'flow-theme-style', get_stylesheet_uri() );
 
-   # wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js',false,'',true);
-	#wp_register_script('popper');
-
-    wp_enqueue_script('flow-theme-tether', get_template_directory_uri(). '/src/js/tether.js', array(),'20170115', true);
+	wp_register_script('popper', get_template_directory_uri() . '/src/js/popper.min.js', array(), '20170710', true );
+    wp_enqueue_script('flow-theme-tether', get_template_directory_uri(). '/src/js/tether.min.js', array(),'20170115', true);
 	wp_enqueue_script('flow-theme-bootstrap', get_template_directory_uri() . 'src/js/bootstrap.min.js', array('jquery'), '20170915',true );
 	wp_enqueue_script('flow-theme-bootstrap-hover', get_template_directory_uri() . 'src/js/bootstap-hover.js', array('jquery'), '20170115',true );
 	wp_enqueue_script('flow-theme-nav-scroll',get_template_directory_uri() . '/src/js/nav-scroll.js', array('jquery'), '20170115', true );
@@ -156,6 +154,12 @@ require get_template_directory() . '/inc/customizer.php';
  * widgets File.
  */
 require get_template_directory() . '/inc/widgets.php';
+
+
+/**
+ * Bootstrap File.
+ */
+require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 
 /**
  * Load Jetpack compatibility file.
