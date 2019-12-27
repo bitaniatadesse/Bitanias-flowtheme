@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all single posts
+ * Template name:Full width
+ * Template post tayp: post
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -10,7 +11,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area col-md-8">
+	<div id="primary" class="content-area col-md-12">
 		<main id="main" class="site-main">
 
 		<?php
@@ -32,7 +33,5 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<div class="col-md-4">
-	<?php get_sidebar(); ?>
-</div>
+
 <?php get_footer();

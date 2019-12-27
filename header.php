@@ -58,8 +58,8 @@
 			'menu_id'				=> 'main-menu',
 			'menu_class'			=> 'navbar-nav ml-auto',
 			'depth'					=> 2,
-			'fallback_cb'			=> 'bs4navwalker::fallback',
-			'walker'				=> new bs4navwalker()
+			'fallback_cb'			=> 'bs4Navwalker::fallback',
+			'walker'				=> new bs4Navwalker()
 		]);
 		?>
 		</nav>
