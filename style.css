@@ -80,6 +80,8 @@ h1 {
 	margin: 0.67em 0;
 }
 
+
+
 /* Grouping content
 	 ========================================================================== */
 
@@ -93,6 +95,8 @@ hr {
 	height: 0; /* 1 */
 	overflow: visible; /* 2 */
 }
+
+
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -480,6 +484,20 @@ hr {
 	margin-bottom: 1.5em;
 }
 
+h1.site-title, p.site-title {
+	margin: 10px 0 0 -2px;
+	padding: 0;
+	line-height: 1em;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+.site-title a {
+	margin: 0;
+}
+p.site-title a:hover {
+	text-decoration: none;
+}
+
 ul, ol {
 	margin: 0 0 1.5em 3em;
 }
@@ -723,6 +741,10 @@ a:hover, a:active {
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*--------------------------------------------------------------
