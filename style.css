@@ -147,6 +147,10 @@ hr {
 	height: 1px;
 	margin-bottom: 1.5em;
 }
+.site-info {
+	text-align: center;
+}
+
 h1.site-title, p.site-title {
 	margin: 10px 0 0 -2px;
 	padding: 0;
@@ -159,6 +163,14 @@ h1.site-title, p.site-title {
 }
 .site-title a:hover {
 	text-decoration: none;
+}
+.site-description{
+	font-size: 16px;
+	margin: 10px 00;
+	letter-spacing: 1px;
+}
+#masthead {
+	margin-bottom: 25px;
 }
 
 ul, ol {
@@ -202,6 +214,9 @@ figure {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+h1.entry-title, h2.entry-title {
+	margin-top: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -495,7 +510,21 @@ a:hover, a:active {
 .widget select {
 	max-width: 100%;
 }
-
+/* Tag Cloud */
+.tagcloud a {
+	border: 1px solid;
+	border-radius: 2px;
+	display: inline-block;
+	line-height: 1;
+	margin: 0 2px 5px 0;
+	padding: 5px;
+	text-decoration: none;
+}
+.tagcloud a:hover, .tagcloud a:focused {
+	
+	color: #f1f1f1;
+	outline: 0;
+}
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
