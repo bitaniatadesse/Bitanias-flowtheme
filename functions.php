@@ -44,7 +44,7 @@ if ( ! function_exists( 'flow_theme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'flow-theme' ),
+			'primary' => esc_html__( 'Primary', 'flow-theme' ),
 		) );
 
 		/*
@@ -108,12 +108,12 @@ add_action( 'after_setup_theme', 'flow_theme_content_width', 0 );
  */
 function flow_theme_scripts() {
 	wp_enqueue_style('flow-theme-bootstrap-css',get_template_directory_uri() . '/dist/css/bootstrap.min.css' );
-	wp_enqueue_style('flow-theme-fontawesome',get_template_directory_uri() . '/fonts/font awsome/css/fontawesome.min.css' );
+	wp_enqueue_style('flow-theme-font awesome',get_template_directory_uri() . '/fonts/font awsome/css/font-awesome.min.css' );
 	wp_enqueue_style( 'flow-theme-style', get_stylesheet_uri() );
 
 	wp_register_script('popper', get_template_directory_uri() . '/src/js/popper.min.js', array(), '20170710', true );
     wp_enqueue_script('flow-theme-tether', get_template_directory_uri(). '/src/js/tether.min.js', array(),'20170115', true);
-	wp_enqueue_script('flow-theme-bootstrap', get_template_directory_uri() . '/src/js/bootstrap.min.js', array('jquery'), '20170915',true );
+	wp_enqueue_script('flow-theme-bootstrap-js', get_template_directory_uri() . '/src/js/bootstrap.min.js', array('jquery'), '20170915',true );
 	wp_enqueue_script('flow-theme-bootstrap-hover', get_template_directory_uri() . '/src/js/bootstrap-hover.js', array('jquery'), '20170115',true );
 	wp_enqueue_script('flow-theme-nav-scroll',get_template_directory_uri() . '/src/js/nav-scroll.js', array('jquery'), '20170115', true );
 

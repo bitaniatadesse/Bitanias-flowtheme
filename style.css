@@ -210,13 +210,26 @@ figure {
 	margin: 1em 0;
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
-
+.cat-links, .tags-links {
+	margin-right: 5px;
+}
+.cat-links a, .tags-links a, .edit-link a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #aaa;
+}
+.cat-links a:focus, .cat-links a:hover, .tags-links a:focus, .tags-links a:hover, .edit-link a:focus, .edit-link a:hover {
+	border-bottom: solid 1px #aaa;
+}
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
 h1.entry-title, h2.entry-title {
-	margin-top: 2em;
+	margin-top: 1em;
+}
+footer{
+	margin-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -297,6 +310,8 @@ textarea:focus {
 
 select {
 	border: 1px solid #ccc;
+	padding:10px;
+	width: 100%;
 }
 
 textarea {
@@ -393,7 +408,7 @@ a:hover, a:active {
 	font-weight: 700;
 	line-height: 40px;
 	text-align: center;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	opacity: .9;
 	border: none;
 }

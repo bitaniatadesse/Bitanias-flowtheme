@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $link ='<a href="#top" class="top">$uarr;</a>';
+    $link ='<a href="#top" class="top">&uarr;</a>';
     $('body').append($link);
     $('.top').hide();
     $(window).scroll(function () {
@@ -8,7 +8,6 @@ jQuery(document).ready(function ($) {
         } else {
             $('.top').fadeOut();
         }
-
     });
     $('.top').click(function (e) {
         e.preventDefault();
