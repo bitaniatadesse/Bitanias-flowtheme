@@ -101,6 +101,11 @@ function flow_theme_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'flow_theme_content_width', 1140 );
 }
 add_action( 'after_setup_theme', 'flow_theme_content_width', 0 );
+function new_excerpt_more($more) {
+	global $post;
+   return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
+  }
+  add_filter('excerpt_more', 'new_excerpt_more');
 
 
 /**
