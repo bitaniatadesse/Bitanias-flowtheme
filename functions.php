@@ -1,10 +1,10 @@
 <?php
 /**
- * flow-theme functions and definitions
+ * Flow functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package flow-theme
+ * @package Flow
  */
 
 if ( ! function_exists( 'flow_theme_setup' ) ) :
@@ -19,10 +19,10 @@ if ( ! function_exists( 'flow_theme_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on flow-theme, use a find and replace
-		 * to change 'flow-theme' to the name of your theme in all the template files.
+		 * If you're building a theme based on Flow, use a find and replace
+		 * to change 'Flow' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'flow-theme', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'Flow', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'flow_theme_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'flow-theme' ),
+			'primary' => esc_html__( 'Primary', 'Flow' ),
 		) );
 
 		/*
@@ -112,22 +112,22 @@ function new_excerpt_more($more) {
  * Enqueue scripts and styles.
  */
 function flow_theme_scripts() {
-	wp_enqueue_style('flow-theme-bootstrap-css',get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
-	wp_enqueue_style('flow-theme-font awesome',get_template_directory_uri() . '/assets/fonts/font awsome/css/font-awesome.min.css' );
-	wp_enqueue_style( 'flow-theme-style', get_stylesheet_uri() );
+	wp_enqueue_style('Flow-bootstrap-css',get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+	wp_enqueue_style('Flow-font awesome',get_template_directory_uri() . '/assets/fonts/font awsome/css/font-awesome.min.css' );
+	wp_enqueue_style( 'Flow-style', get_stylesheet_uri() );
 
 	wp_register_script('popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '20170710', true );
-    wp_enqueue_script('flow-theme-tether', get_template_directory_uri(). '/assets/js/tether.min.js', array(),'20170115', true);
-	wp_enqueue_script('flow-theme-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170915',true );
-	wp_enqueue_script('flow-theme-bootstrap-hover', get_template_directory_uri() . '/assets/js/bootstrap-hover.js', array('jquery'), '20170115',true );
-	wp_enqueue_script('flow-theme-nav-scroll',get_template_directory_uri() . '/assets/js/nav-scroll.js', array('jquery'), '20170115', true );
+    wp_enqueue_script('Flow-tether', get_template_directory_uri(). '/assets/js/tether.min.js', array(),'20170115', true);
+	wp_enqueue_script('Flow-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '20170915',true );
+	wp_enqueue_script('Flow-bootstrap-hover', get_template_directory_uri() . '/assets/js/bootstrap-hover.js', array('jquery'), '20170115',true );
+	wp_enqueue_script('Flow-nav-scroll',get_template_directory_uri() . '/assets/js/nav-scroll.js', array('jquery'), '20170115', true );
 
 	wp_enqueue_script('jquery');
 
-	wp_enqueue_script( 'flow-theme_bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20170710', true );
+	wp_enqueue_script( 'Flow_bootstrap_js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20170710', true );
 	
 
-	wp_enqueue_script( 'flow-theme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'Flow-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

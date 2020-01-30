@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package flow-theme
+ * @package Flow
  */
 
 ?>
@@ -15,16 +15,16 @@
 
 	<footer id="colophon" class="site-footer row ">
 		<div class="site-info col-md-12">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'flow-theme' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'Flow' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'flow-theme' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'Flow' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'flow-theme' ), 'flow-theme', '<a href="http://underscores.me/">Underscores.bitu</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'Flow' ), 'Flow', '<a href="http://underscores.me/">Underscores.bitu</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
