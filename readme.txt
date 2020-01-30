@@ -1,4 +1,4 @@
-=== flow-theme ===
+=== Flow ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called flow-theme.
+A starter theme called Flow.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Description
 
 = Does this theme support any plugins? =
 
-flow-theme includes support for Infinite Scroll in Jetpack.
+Flow includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
